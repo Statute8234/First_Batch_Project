@@ -1,0 +1,24 @@
+sending incremental file list
+created directory backup//current
+./
+Batch/
+Batch/filename.text
+Batch/test.sh
+
+sent 169 bytes  received 67 bytes  472.00 bytes/sec
+total size is 50  speedup is 0.21 (DRY RUN)
+sending incremental file list
+created directory backup//current
+./
+Batch/
+Batch/filename.text
+Batch/test.sh
+
+sent 303 bytes  received 103 bytes  812.00 bytes/sec
+total size is 50  speedup is 0.12
+sending incremental file list
+./
+testfile.txt
+
+sent 230 bytes  received 39 bytes  538.00 bytes/sec
+total size is 50  speedup is 0.19

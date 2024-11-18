@@ -1,0 +1,191 @@
+Nov 11 15:55:50 Daniel systemd-logind[288]: New seat seat0.
+Nov 11 15:55:55 Daniel useradd[810]: new user: name=lxd, UID=998, GID=100, home=/var/snap/lxd/common/lxd, shell=/bin/false, from=none
+Nov 11 15:55:58 Daniel login[1044]: pam_unix(login:session): session opened for user root by (uid=0)
+Nov 11 15:55:58 Daniel systemd-logind[288]: New session 1 of user root.
+Nov 11 15:55:58 Daniel systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Nov 11 15:55:58 Daniel login[1164]: ROOT LOGIN  on '/dev/pts/1'
+Nov 11 16:00:23 Daniel systemd-logind[286]: New seat seat0.
+Nov 11 16:00:28 Daniel groupadd[617]: group added to /etc/group: name=diffuser, GID=1000
+Nov 11 16:00:28 Daniel groupadd[617]: group added to /etc/gshadow: name=diffuser
+Nov 11 16:00:28 Daniel groupadd[617]: new group: name=diffuser, GID=1000
+Nov 11 16:00:28 Daniel useradd[623]: new user: name=diffuser, UID=1000, GID=1000, home=/home/diffuser, shell=/bin/bash, from=/dev/pts/0
+Nov 11 16:00:29 Daniel login[601]: pam_unix(login:session): session opened for user root by (uid=0)
+Nov 11 16:00:29 Daniel systemd-logind[286]: New session 1 of user root.
+Nov 11 16:00:29 Daniel systemd: pam_unix(systemd-user:session): session opened for user root by (uid=0)
+Nov 11 16:00:29 Daniel login[748]: ROOT LOGIN  on '/dev/pts/1'
+Nov 11 16:02:24 Daniel passwd[767]: pam_unix(passwd:chauthtok): password changed for diffuser
+Nov 11 16:02:24 Daniel chfn[768]: changed user 'diffuser' information
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'adm'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'dialout'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'cdrom'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'floppy'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'sudo'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'audio'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'dip'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'video'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'plugdev'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to group 'netdev'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'adm'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'dialout'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'cdrom'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'floppy'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'sudo'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'audio'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'dip'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'video'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'plugdev'
+Nov 11 16:02:24 Daniel usermod[780]: add 'diffuser' to shadow group 'netdev'
+Nov 11 16:02:25 Daniel systemd-logind[297]: New seat seat0.
+Nov 11 16:02:30 Daniel login[542]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 11 16:02:30 Daniel systemd-logind[297]: New session 3 of user diffuser.
+Nov 11 16:02:30 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 11 16:03:58 Daniel sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=diffuser rhost=  user=diffuser
+Nov 11 16:04:09 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 11 16:04:09 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:04:32 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:07:50 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt aupgrade -y
+Nov 11 16:07:50 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:07:50 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:08:04 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt upgrade -y
+Nov 11 16:08:04 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:10:34 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:12:01 Daniel CRON[20254]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 11 16:12:01 Daniel CRON[20254]: pam_unix(cron:session): session closed for user root
+Nov 11 16:14:51 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install python3-pip -y
+Nov 11 16:14:51 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:15:32 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:17:01 Daniel CRON[25551]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 11 16:17:01 Daniel CRON[25551]: pam_unix(cron:session): session closed for user root
+Nov 11 16:41:46 Daniel sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=diffuser rhost=  user=diffuser
+Nov 11 16:41:57 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/mnt/c ; USER=root ; COMMAND=/usr/bin/apt install git
+Nov 11 16:41:57 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:41:57 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:44:45 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/mnt/c ; USER=root ; COMMAND=/usr/bin/apt install zsh
+Nov 11 16:44:45 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:44:54 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 16:45:09 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/mnt/c ; USER=root ; COMMAND=validate
+Nov 11 16:45:17 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/mnt/c ; USER=root ; COMMAND=/usr/bin/chsh -s /usr/bin/zsh diffuser
+Nov 11 16:45:17 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 11 16:45:17 Daniel chsh[27634]: changed user 'diffuser' shell to '/usr/bin/zsh'
+Nov 11 16:45:17 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 11 18:50:49 Daniel systemd-logind[304]: New seat seat0.
+Nov 11 18:50:50 Daniel login[501]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 11 18:50:50 Daniel systemd-logind[304]: New session 1 of user diffuser.
+Nov 11 18:50:50 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 11 18:55:32 Daniel systemd-logind[310]: New seat seat0.
+Nov 11 18:55:33 Daniel login[486]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 11 18:55:33 Daniel systemd-logind[310]: New session 3 of user diffuser.
+Nov 11 18:55:33 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 11 19:02:54 Daniel systemd-logind[332]: New seat seat0.
+Nov 11 19:02:55 Daniel login[517]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 11 19:02:55 Daniel systemd-logind[332]: New session 7 of user diffuser.
+Nov 11 19:02:55 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 11 19:17:01 Daniel CRON[689]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 11 19:17:01 Daniel CRON[689]: pam_unix(cron:session): session closed for user root
+Nov 14 20:11:39 Daniel systemd-logind[306]: New seat seat0.
+Nov 14 20:11:40 Daniel login[479]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 14 20:11:40 Daniel systemd-logind[306]: New session 1 of user diffuser.
+Nov 14 20:11:40 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 14 20:17:01 Daniel CRON[2032]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 20:17:01 Daniel CRON[2032]: pam_unix(cron:session): session closed for user root
+Nov 14 20:33:19 Daniel systemd-logind[329]: New seat seat0.
+Nov 14 20:33:21 Daniel login[519]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 14 20:33:21 Daniel systemd-logind[329]: New session 1 of user diffuser.
+Nov 14 20:33:21 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 14 20:37:48 Daniel systemd-logind[328]: New seat seat0.
+Nov 14 20:37:49 Daniel login[517]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 14 20:37:49 Daniel systemd-logind[328]: New session 1 of user diffuser.
+Nov 14 20:37:49 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 14 20:47:09 Daniel systemd-logind[322]: New seat seat0.
+Nov 14 20:47:11 Daniel login[517]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 14 20:47:11 Daniel systemd-logind[322]: New session 1 of user diffuser.
+Nov 14 20:47:11 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 14 21:17:01 Daniel CRON[1824]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 21:17:01 Daniel CRON[1824]: pam_unix(cron:session): session closed for user root
+Nov 14 22:02:28 Daniel chsh[2402]: changed user 'diffuser' shell to '/usr/bin/bash'
+Nov 14 22:05:47 Daniel sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/2 ruser=diffuser rhost=  user=diffuser
+Nov 14 22:05:58 Daniel sudo: diffuser : TTY=pts/2 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/chmod +x test.sh
+Nov 14 22:05:58 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 22:05:58 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 22:17:01 Daniel CRON[2614]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 14 22:17:01 Daniel CRON[2614]: pam_unix(cron:session): session closed for user root
+Nov 14 22:56:07 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/chmod -x test2.sh
+Nov 14 22:56:07 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 22:56:07 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 14 22:56:50 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/chmod +x test2.sh
+Nov 14 22:56:50 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 14 22:56:50 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 16:13:53 Daniel systemd-logind[323]: New seat seat0.
+Nov 17 16:13:54 Daniel login[515]: pam_unix(login:session): session opened for user diffuser by (uid=0)
+Nov 17 16:13:54 Daniel systemd-logind[323]: New session 1 of user diffuser.
+Nov 17 16:13:54 Daniel systemd: pam_unix(systemd-user:session): session opened for user diffuser by (uid=0)
+Nov 17 16:17:01 Daniel CRON[826]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 16:17:01 Daniel CRON[826]: pam_unix(cron:session): session closed for user root
+Nov 17 16:35:18 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 17 16:35:18 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 16:35:37 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 16:35:37 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install -y htop
+Nov 17 16:35:37 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 16:35:38 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 16:36:10 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 17 16:36:10 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 16:36:23 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 16:36:23 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install -y htop
+Nov 17 16:36:23 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 16:36:23 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:00:38 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt remove htop
+Nov 17 17:00:38 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:00:43 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:00:57 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov 17 17:00:57 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:01:01 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:02:28 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install notexist
+Nov 17 17:02:28 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:02:28 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:07:09 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt remove htop
+Nov 17 17:07:09 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:07:13 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:07:21 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov 17 17:07:21 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:07:25 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:08:15 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install leeeeesjkdbjnsjdnb
+Nov 17 17:08:15 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:08:15 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:11:26 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt remove htop
+Nov 17 17:11:26 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:11:30 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:11:41 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install htop
+Nov 17 17:11:41 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:11:46 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:13:07 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install htop098348950848903
+Nov 17 17:13:07 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:13:08 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:17:01 Daniel CRON[2938]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 17:17:01 Daniel CRON[2938]: pam_unix(cron:session): session closed for user root
+Nov 17 17:24:55 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install hammgherh
+Nov 17 17:24:55 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:24:55 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:25:22 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt install hammgherh
+Nov 17 17:25:22 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:25:23 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:55:29 Daniel sudo: pam_unix(sudo:auth): authentication failure; logname= uid=1000 euid=0 tty=/dev/pts/0 ruser=diffuser rhost=  user=diffuser
+Nov 17 17:55:51 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 17 17:55:51 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:56:11 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 17:56:11 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov 17 17:56:11 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 17:57:24 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:03:26 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 17 18:03:26 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 18:03:40 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:03:40 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov 17 18:03:40 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 18:03:41 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:11:11 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt update
+Nov 17 18:11:11 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 18:11:25 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:11:25 Daniel sudo: diffuser : TTY=pts/0 ; PWD=/home/diffuser ; USER=root ; COMMAND=/usr/bin/apt dist-upgrade
+Nov 17 18:11:25 Daniel sudo: pam_unix(sudo:session): session opened for user root by (uid=0)
+Nov 17 18:11:26 Daniel sudo: pam_unix(sudo:session): session closed for user root
+Nov 17 18:17:01 Daniel CRON[30186]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 17 18:17:01 Daniel CRON[30186]: pam_unix(cron:session): session closed for user root
